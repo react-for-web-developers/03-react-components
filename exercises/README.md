@@ -1,4 +1,4 @@
-# Exercise: Component Heirarchies
+# Exercise: Component Hierarchies
 
 Pick a website that you visit often (reddit, facebook, gmail etc.). Re-create the component hierarchy with at least 6 components (App, NavBar, NewList etc.). Do not worry about styles or content.
 
