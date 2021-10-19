@@ -3,7 +3,7 @@ import Repo from './Repository';
 export function Repositories() {
   return (
     <>
-      <h3>This contains multiple repositories</h3>
+      <h2>This contains multiple repositories</h2>
       <Repository />
       <Repository />
       <Repository />
