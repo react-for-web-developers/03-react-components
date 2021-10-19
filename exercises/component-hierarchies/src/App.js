@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Container from './components/Container';
+import Navbar from './components/Global/Navbar';
+import AccountSwitcherArea from './components/AccountSwitcherButton';
+import Header from './components/Header';
+import Feed from './components/Feed';
+import SearchBar from './components/Global/SearchBar';
+import TrendingTopics from './components/TrendingSection';
+import ReferralsSection from './components/ReferralsSection';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Container>
+      <header>
+        <Navbar />
+        <AccountSwitcherArea />
       </header>
-    </div>
+      <main>
+        <div className="primary-column">
+          <Header />
+          <Feed />
+        </div>
+        <div className="sidebar-column">
+          <SearchBar />
+          <TrendingTopics />
+          <ReferralsSection />
+          <Footer />
+        </div>
+      </main>
+    </Container>
   );
 }
 
